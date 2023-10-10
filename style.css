@@ -24,12 +24,14 @@
 html,
 body {
     margin: 0;
-    padding: 0;
-    /* width: 1366px; */
+    padding: 0; 
     display: grid;
     justify-content: center;
+    background-color:#fcfcfa
 }
-
+.super_main_container{
+    width: 1366px;
+}
 h1,
 h2,
 h3,
@@ -51,7 +53,7 @@ header {
     justify-content: space-around;
 }
 
-.header__icons {
+.header_icons {
     display: flex;
     gap: 2rem;
 }
@@ -70,27 +72,27 @@ header nav a {
 }
 
 
-.header__text {
+.header_text {
     display: grid;
     align-items: center;
     text-align: center;
     justify-content: center;
 }
 
-.header__text h1 {
+.header_text h1 {
     font-family: "Rubik3";
     font-size: 7rem;
 }
-.header__text p {
+.header_text p {
     font-family: "Rubik1";
     font-size: 2.5rem;
 }
 
-.text__aqua {
+.text_aqua {
     color: rgb(50 191 206);
 }
 
-.view__catalog__btn {
+.view_catalog_btn {
     color: white;
     background-color: rgb(255 91 53);
     padding: 1.5rem;
@@ -118,7 +120,7 @@ header nav a {
 
 /* About */
 
-.main__about__container {
+.main_about_container {
     margin-top: 12rem;
     display: flex;
     /* align-items: center; */
@@ -128,7 +130,7 @@ header nav a {
     padding-right: 100px; */
 }
 
-.main__about__text p {
+.main_about_text p {
     max-width: 62rem;
     font-family: "Rubik1";
     /* font-weight: 500; */
@@ -136,7 +138,7 @@ header nav a {
     /* font-weight: 700; */
 }
 
-.main__about__text h1 {
+.main_about_text h1 {
     font-family: "Rubik3";
     font-size: 5rem;
 }
@@ -169,8 +171,8 @@ header nav a {
     background-color: #f6eed1;
 }
 
-.cart__img,
-.cart__img1 {
+.cart_img,
+.cart_img1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -188,12 +190,12 @@ header nav a {
 
 }
 
-.cart__img img {
+.cart_img img {
     width: 16rem;
     height: 25rem;
 }
 
-.backgound1 .cart__img1 img {
+.backgound1 .cart_img1 img {
 
     width: 22rem;
     height: 25rem;
@@ -203,13 +205,13 @@ header nav a {
 
 /* bing-bong */
 
-.bing__bong {
+.bing_bong {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #e8e7df;
-    border-radius: 15%;
+    border-radius: 19%;
     padding: 15rem;
     text-align: center;
 }
@@ -222,11 +224,11 @@ header nav a {
     font-size: 2rem;
 }
 
-.bing__bong__img {
+.bing_bong_img {
     position: relative;
     text-align: center;
 }
-.top-left{
+.top_left{
     position: absolute;
     top: 2rem;
     left: 1.6rem;
@@ -237,13 +239,13 @@ header nav a {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.bottom-left{
+.bottom_left{
     position: absolute;
     bottom: 2rem;
     left: 2rem;
 }
 
-.bing__bong__row{
+.bing_bong_row{
     margin-top: 2rem;
     display: flex;
     flex-direction: row;
@@ -260,7 +262,7 @@ header nav a {
 
 /* lovely games */
 
-.lovely__games{
+.lovely_games{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -268,7 +270,7 @@ header nav a {
     gap: 15rem;
 }
 
-.lovely__games h1{
+.lovely_games h1{
     font-family: "Rubik3";
     font-size: 6rem;
 }
@@ -302,7 +304,7 @@ header nav a {
     background-color: #e8e7df;
     border-radius: 5rem;
 }
-.lovely__games_mini_title{
+.lovely_games_mini_title{
     position: absolute;
     top:3.5rem;
     display: flex;
@@ -310,13 +312,9 @@ header nav a {
     font-family: "Rubik2";
     font-size: 2rem;
 }
-.column{
-    display: flex;
-}
 
 
-
-.sellary__kids_games{
+.sellary_kids_games{
     width: 100%;
     padding-top: 6rem;
     padding-left: 6rem;
@@ -345,7 +343,10 @@ header nav a {
     font-family: 'Rubit3';
 
 }
-.sellary__kids__text {
+.row{
+    display: flex;
+}
+.sellary_kids_text {
     margin-top: 6rem;
     display: flex;
     justify-content: center;
@@ -353,11 +354,11 @@ header nav a {
     flex-direction: column;
 }
 
-.sellary__kids__text h1{
+.sellary_kids_text h1{
     font-family: 'Rubik3';
     font-size: 7.5rem;
 }
-.sellary__kids__text p{
+.sellary_kids_text p{
     font-family: 'Rubik1';
     font-size: 2rem;
 }
@@ -366,17 +367,35 @@ header nav a {
 
 
 
-.game__with__description{
-    display: flex;
+.game_with_description{
     margin-top: 12rem;
+    gap: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.game_with_description img{
+    position: relative;
 }
 .game_of_month{
     background-color: #daf3f5;
     display: flex;
     align-items: center;
-    padding: 1rem;
-    font-family: "Rubik1";
+    justify-content: center;
+    padding: 1rem 2rem 1rem 2rem;
+    /* padding-left: 1.6rem;
+    padding-right: 1.6rem; */
+    font-family: "Rubik2";
+    font-size: 1.8rem;
     border-radius: 1rem;
+    margin-right: 4rem;
+    
+}
+.game_of_month img{
+    width:4rem;
+    height: 4rem;
+    margin-right: 0.5rem;
 }
 
 .rate_container{
@@ -384,14 +403,69 @@ header nav a {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    font-family: "Rubik3" ;
+    font-size: 2rem;
 }
-.row{
+
+.rate_container img{
+    width: 5rem;
+    height: 5rem;
+    margin-right: 0.5rem;
+}
+.container_city_game{
     display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    gap:6rem
 }
+
+
 .city_game_text h1{
-
+    margin-top: 3rem;
+    font-family: "Rubik3";
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+.city_game_text p{
+    font-family: "Rubik1";
+    font-size: 1.8rem;
 }
 
-/* .lovely__games_mini_title{
-    position: relative;
-} */
+.limit_row{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-family:"Rubik2";
+    font-size:1.8rem;
+}
+.limit_row div{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items:center;
+}
+.add_game_in_basket{
+    margin-top: 3.5rem;
+    display: flex;
+    gap: 10rem;
+}
+.add_game_in_basket h3{
+    font-family: "Rubik3";
+    font-size: 4rem;
+}
+.add_in_basket_btn{
+    font-family: "Rubik1";
+    font-size: 2rem;
+    border:none;
+    border-radius:1rem;
+    background-color:#ff5b35;
+    color:#fffaf8;
+    padding: 1rem 2rem 1rem 2rem;
+}
+.game_description_dop_info{
+    display: flex;
+    flex-direction: column;
+    /* align-self:flex-start; */
+    /* justify-content:start; */
+}
