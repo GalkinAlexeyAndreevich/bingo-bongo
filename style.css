@@ -1,49 +1,47 @@
 @font-face {
     font-family: "Rubik1";
     src: url("./fonts/Rubik-Light.ttf") format("truetype");
-    font-style: normal;
-    font-weight: 300;
 }
 
 @font-face {
     font-family: "Rubik2";
     src: url("./fonts/Rubik-Medium.ttf") format("truetype");
-    font-style: normal;
-    font-weight: 500;
 }
 
 @font-face {
     font-family: "Rubik3";
     src: url("./fonts/Rubik-Bold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: 700;
+
 }
 
 :root {
-    font-family: "Rubik1";
+    /* font-family: "Rubik1"; */
     margin: 0;
     padding: 0;
+    font-size: 10px;
 }
 
 html,
 body {
     margin: 0;
     padding: 0;
-    width: 1366px;
+    /* width: 1366px; */
+    display: grid;
+    justify-content: center;
 }
 
 h1,
 h2,
 h3,
 h4,
-h5 {
+h5,p {
     margin: 0;
     padding: 0;
 }
 
 /* Header */
 header {
-    padding-top: 30px;
+    padding-top: 3rem;
     background-color: #e8e7df;
 }
 
@@ -55,8 +53,22 @@ header {
 
 .header__icons {
     display: flex;
-    gap: 20px;
+    gap: 2rem;
 }
+header nav {
+    display: flex;
+    gap: 4rem;
+
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    font-family: "Rubik2";
+    font-size: 2rem;
+    /* font-weight: 300; */
+}
+
 
 .header__text {
     display: grid;
@@ -67,8 +79,11 @@ header {
 
 .header__text h1 {
     font-family: "Rubik3";
-    font-size: 70px;
-    margin: 0;
+    font-size: 7rem;
+}
+.header__text p {
+    font-family: "Rubik1";
+    font-size: 2.5rem;
 }
 
 .text__aqua {
@@ -78,15 +93,15 @@ header {
 .view__catalog__btn {
     color: white;
     background-color: rgb(255 91 53);
-    padding: 15px;
-    width: 170px;
-    border-radius: 10px;
+    padding: 1.5rem;
+    width: 17rem;
+    border-radius: 1rem;
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 150px;
+    margin-top: 4rem;
+    margin-bottom: 15rem;
 }
 
 .header_text_container {
@@ -95,65 +110,53 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: 20rem;
 }
 
-header nav {
-    display: flex;
-    gap: 40px;
-
-}
-
-header nav a {
-    text-decoration: none;
-    color: black;
-    font-family: "Rubik2";
-    font-weight: 300;
-}
 
 
 
 /* About */
 
 .main__about__container {
-    margin-top: 120px;
+    margin-top: 12rem;
     display: flex;
     /* align-items: center; */
     justify-content: center;
-    gap: 100px;
+    gap: 10rem;
     /* padding-left: 100px;
     padding-right: 100px; */
 }
 
 .main__about__text p {
-    max-width: 620px;
+    max-width: 62rem;
     font-family: "Rubik1";
-    font-weight: 500;
-    font-size: 20px;
+    /* font-weight: 500; */
+    font-size: 2rem;
     /* font-weight: 700; */
 }
 
 .main__about__text h1 {
     font-family: "Rubik3";
-    font-size: 50px;
+    font-size: 5rem;
 }
 
 .main_about_games {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 7rem;
 }
 
 .main_about_games .cart {
-    margin: 20px;
-    padding: 40px;
-    padding-right: 60px;
-    padding-left: 60px;
-    height: 350px;
+    margin: 2rem;
+    padding: 4rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
+    height: 35rem;
     display: grid;
-    gap: 10px;
-    border-radius: 30px;
+    gap: 1rem;
+    border-radius: 3rem;
     align-items: center;
     justify-content: center;
 }
@@ -174,31 +177,49 @@ header nav a {
 }
 
 .cart h3 {
-    font-size: 25px;
-    font-weight: 700;
+    font-family: "Rubik2";
+    font-size: 2.5rem;
 }
 
-.cart span {
-    font-size: 15px;
+.cart p {
+    font-family: "Rubik1";
+    font-size: 1.5rem;
     font-weight: 500;
+
 }
 
 .cart__img img {
-    width: 160px;
-    height: 250px;
+    width: 16rem;
+    height: 25rem;
 }
 
 .backgound1 .cart__img1 img {
 
-    width: 220px;
-    height: 240px;
+    width: 22rem;
+    height: 25rem;
 }
+
+
+
+/* bing-bong */
 
 .bing__bong {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #e8e7df;
+    border-radius: 15%;
+    padding: 15rem;
+    text-align: center;
+}
+.title_bing_bong{
+    font-family: "Rubik3";
+    font-size: 5rem;
+}
+.top_shop_text{
+    font-size: "Rubik1";
+    font-size: 2rem;
 }
 
 .bing__bong__img {
@@ -207,6 +228,170 @@ header nav a {
 }
 .top-left{
     position: absolute;
-    top: 8px;
-    left: 16px;
+    top: 2rem;
+    left: 1.6rem;
 }
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bottom-left{
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+.bing__bong__row{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.text_bing_bong{
+    font-family: "Rubik2";
+    font-size: 1.8rem;
+}
+
+/* lovely games */
+
+.lovely__games{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 15rem;
+}
+
+.lovely__games h1{
+    font-family: "Rubik3";
+    font-size: 6rem;
+}
+
+.lovely_class1{
+    position: relative;
+    background-color: #e8e7df;
+    display: flex;
+    justify-content: center;
+    border-top-right-radius: 4rem;
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 17rem;
+    border-bottom-right-radius: 3rem;
+    margin-bottom: 4rem;
+    /* position: absolute; */
+}
+.lovely_class2{
+    position: relative;
+    background-color: #e8e7df;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    margin-right: 4rem;
+}
+.lovely_class3{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #e8e7df;
+    border-radius: 5rem;
+}
+.lovely__games_mini_title{
+    position: absolute;
+    top:3.5rem;
+    display: flex;
+    text-align: center;
+    font-family: "Rubik2";
+    font-size: 2rem;
+}
+.column{
+    display: flex;
+}
+
+
+
+.sellary__kids_games{
+    width: 100%;
+    padding-top: 6rem;
+    padding-left: 6rem;
+    margin-top: 12rem;
+    /* position: relative; */
+    background-color: #e8e7df;
+    display: flex;
+    background-image: url("./img/photo.png");
+    background-color: transparent;
+    background-repeat:no-repeat;
+    background-size: contain;
+    /* align-items: center; */
+}
+
+.heart_container{
+    position: relative;
+    margin-right: 3rem;
+}
+.heart_container h2{
+    position: absolute;
+    top: 4rem;
+    left: 3.5rem;
+    transform:rotate(-30deg);
+    font-size: 2rem;
+    color: #3bc1d0;
+    font-family: 'Rubit3';
+
+}
+.sellary__kids__text {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.sellary__kids__text h1{
+    font-family: 'Rubik3';
+    font-size: 7.5rem;
+}
+.sellary__kids__text p{
+    font-family: 'Rubik1';
+    font-size: 2rem;
+}
+
+
+
+
+
+.game__with__description{
+    display: flex;
+    margin-top: 12rem;
+}
+.game_of_month{
+    background-color: #daf3f5;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    font-family: "Rubik1";
+    border-radius: 1rem;
+}
+
+.rate_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.row{
+    display: flex;
+}
+.city_game_text h1{
+
+}
+
+/* .lovely__games_mini_title{
+    position: relative;
+} */
