@@ -211,7 +211,8 @@ header nav a {
     justify-content: center;
     align-items: center;
     background-color: #e8e7df;
-    border-radius: 19%;
+    /* border-radius: 19%; */
+    border-radius:14rem;
     padding: 15rem;
     text-align: center;
 }
@@ -374,21 +375,20 @@ header nav a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50rem;
 }
-.game_with_description img{
-    position: relative;
-}
+
 .game_of_month{
     background-color: #daf3f5;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
     /* padding-left: 1.6rem;
     padding-right: 1.6rem; */
     font-family: "Rubik2";
     font-size: 1.8rem;
-    border-radius: 1rem;
+    border-radius: 1.8rem;
     margin-right: 4rem;
     
 }
@@ -414,6 +414,7 @@ header nav a {
 }
 .container_city_game{
     display: flex;
+    position: relative;
     /* justify-content: center;
     align-items: center; */
     gap:6rem
@@ -464,8 +465,163 @@ header nav a {
     padding: 1rem 2rem 1rem 2rem;
 }
 .game_description_dop_info{
+    position: absolute;
+    top: 48rem;
+
+}
+
+.dop_info_radio_button{
+    display: flex;
+    background-color:#f0f0eb;
+    padding:0.5rem 1rem;
+    gap: 2rem;
+    font-family: "Rubik1";
+    font-size: 2.8rem;
+    border-radius: 1.3rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+.dop_info_radio_button input[type=radio] {
+	display: none;
+}
+
+.dop_info_radio_button input[type=radio] + label {
+	/* background: #ffe0a6; */
+    cursor: pointer;
+    padding: 0.5rem 2rem;
+    border-radius:1rem
+}
+
+.dop_info_radio_button input[type=radio]:checked + label {
+	background: #f5d961;
+}
+
+.game_description_dop_info p{
+    font-family: "Rubik1";
+    font-size: 1.82rem;
+}
+
+
+
+
+
+
+
+
+.form{
+    display: flex;
+    justify-content:center;
+}
+.left_form_container h1{
+    font-family: "Rubik3";
+    font-size: 7rem;
+    margin-bottom: 2rem;
+}
+.left_form_container p{
+    font-family: "Rubik1";
+    font-size: 2.2rem;
+}
+.form_image_container{
+    margin-top: 8rem;
+    font-family: "Rubik2";
+    font-size: 2rem;
+    position: absolute;
+}
+.image_container1,
+.image_container2,
+.image_container3,
+.image_container4{
+    position: relative;
+
+}
+.image_container2{
+    left:17rem;
+    top:-23rem;
+}
+.image_container3{
+    left:32rem;
+    top:-35rem;
+}
+.image_container4{
+    left:12.4rem;
+    top:-35rem;
+}
+
+
+.image_container1 p{
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    transform: translate(-50%,-50%);
+}
+
+.image_container2 p{
+    position: absolute;
+    top: 66%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+}
+.image_container3 p{
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    transform: translate(-50%,-50%);
+}
+.image_container4 p{
+    position: absolute;
+    top: 40%;
+    left: 13%;
+    transform: translate(-50%,-50%);
+    transform: rotate(-16deg);
+}
+
+
+.right_form_container{
+    margin-left: 20rem;
+    /* margin-top: 200rem; */
     display: flex;
     flex-direction: column;
-    /* align-self:flex-start; */
-    /* justify-content:start; */
+    font-family: "Rubik1";
+}
+.three_inputs_form p{
+    font-family: "Rubik1";
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.three_inputs_form input{
+    border-color: #3bc1d0;
+    border-radius:2rem;
+    width: 50rem;
+    height: 5rem;
+    margin-bottom: 2rem;
+}
+.choose_your_game_level p{
+    font-family: "Rubik1";
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.choose_your_game_level label{
+    font-family: "Rubik1";
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+.attention_personal_data{
+    margin-top: 3rem;
+    display: flex;
+    align-items:center;
+    font-size:2rem
+}
+
+.buy_ticket{
+    margin-top: 5rem;
+    background-color:#ff5b35;
+    color:#fffbf9;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding: 1.5rem 3rem;
+    max-width: fit-content;
+    font-size: 3rem;
+    border-radius:2rem;
+    border:none
 }

@@ -40,7 +40,7 @@
         </div>
       </header>
       <main>
-        <div class="main_about_container">
+        <section class="main_about_container">
           <div class="main_about_text">
             <h1>О НАС</h1>
             <p>
@@ -63,8 +63,8 @@
             </p>
           </div>
           <img src="./img/game.png" alt="" />
-        </div>
-        <div class="main_about_games">
+        </section>
+        <section class="main_about_games">
           <div class="cart backgound1">
             <h3>Для детей</h3>
             <p>
@@ -100,8 +100,8 @@
               <img src="./img/tres.png" alt="" />
             </div>
           </div>
-        </div>
-        <div class="bing_bong">
+        </section>
+        <section class="bing_bong">
           <h1 class="title_bing_bong">БИНГО БОНГО</h1>
           <p class="top_shop_text">
             Самый популярный магазин настольных игр в России <br />в 2021 году
@@ -144,8 +144,8 @@
               </p>
             </div>
           </div>
-        </div>
-        <div class="lovely_games">
+        </section>
+        <section class="lovely_games">
           <h1>
             Любимые игры <br />
             покупателей
@@ -169,9 +169,9 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div class="sellary_kids_games">
+        <section class="sellary_kids_games">
           <div class="heart_container">
             <h2>Скидки<br />до 50%</h2>
             <img src="./img/heart.svg" alt="" />
@@ -188,8 +188,8 @@
             <button class="view_catalog_btn">Смотреть каталог</button>
           </div>
           <div></div>
-        </div>
-        <div class="game_with_description ">
+        </section>
+        <section class="game_with_description">
           <div class="container_city_game">
             <img src="./img/town.png" alt="" />
             <div>
@@ -241,26 +241,117 @@
                 <button class="add_in_basket_btn">Добавить в корзину</button>
               </div>
             </div>
+            <div class="game_description_dop_info">
+              <div class="dop_info_radio_button">
+                <input
+                  id="layout-description"
+                  type="radio"
+                  name="layout"
+                  checked
+                /><label for="layout-description">Описание</label>
+                <input id="layout-rules" type="radio" name="layout" /><label
+                  for="layout-rules"
+                  >Правила игры</label
+                >
+                <input id="layout-review" type="radio" name="layout" /><label
+                  for="layout-review"
+                  >Отзывы</label
+                >
+                <!-- <button>Описание</button>
+                <button>Правила игры</button>
+                <button>Отзывы</button> -->
+              </div>
+              <p>
+                Новое исполнение всем полюбившейся градостроительной игры.
+                <br />
+                На этот раз создатели подумали об игроках всех возрастов. <br />
+                Регулируйте уровень сложности и играйте в любой компании. <br />
+                Самые простые правила позволяют играть даже детям от 6 лет.
+                <br />
+                <br />
+                Компании взрослых игроков будет интересно, если усложнить игру,
+                <br />
+                причем в «Город» могут играть как 3 человека, так и группа
+                больше,
+                <br />
+                до 20 человек. Это не просто игра, которая увлечет вас не на
+                один
+                <br />
+                вечер. Она развивает критическое мышление, учит договариваться,
+                <br />
+                искать компромиссы, находить нестандартные решения проблемы.
+              </p>
+            </div>
           </div>
-
-          <div class="game_description_dop_info">
+        </section>
+        <section class="form">
+          <div class="left_form_container">
+            <h1>
+              ОКТЯБРЬСКАЯ <br />
+              ИГРОТЕКА
+            </h1>
             <p>
-              Новое исполнение всем полюбившейся градостроительной игры. <br />
-              На этот раз создатели подумали об игроках всех возрастов. <br />
-              Регулируйте уровень сложности и играйте в любой компании. <br />
-              Самые простые правила позволяют играть даже детям от 6 лет. <br />
-              Компании взрослых игроков будет интересно, если усложнить игру,
-              <br />
-              причем в «Город» могут играть как 3 человека, так и группа больше,
-              <br />
-              до 20 человек. Это не просто игра, которая увлечет вас не на один
-              <br />
-              вечер. Она развивает критическое мышление, учит договариваться,
-              <br />
-              искать компромиссы, находить нестандартные решения проблемы.
+              Приглашаем вас на увлекательную игротеку от Бинго <br />
+              Бонго! Приходите сами, приводите друзей и семью. <br />
+              Мы обещаем - будет очень весело!
             </p>
+            <div class="form_image_container">
+              <div class="image_container1">
+                <img src="./img/flower.svg" alt="" />
+                <p>3 ноября</p>
+              </div>
+              <div class="image_container2">
+                <img src="./img/fire.svg" alt="" />
+                <p>
+                  Билет <br />
+                  300 ₽
+                </p>
+              </div>
+              <div class="image_container3">
+                <p>15:00</p>
+                <img src="./img/rhomb.svg" alt="" />
+              </div>
+              <div class="image_container4">
+                <p>ТЦ «ГИГА», Москва</p>
+                <img src="./img/arrow.svg" alt="" />
+              </div>
+            </div>
           </div>
-        </div>
+          <form class="right_form_container">
+              <div class="three_inputs_form">
+                <p>Имя</p>
+                <input type="text" class="form_name">
+              </div>
+              <div class="three_inputs_form">
+                <p>Телефон</p>
+                <input type="text" class="form_phone">
+              </div>
+              <div class="three_inputs_form">
+                <p>Email</p>
+                <input type="text" class="form_email">
+              </div>
+              <div class="choose_your_game_level">
+                <p>Выберите свой игровой уровень</p>
+                <div>
+                  <input type="radio"  name="form-novichok" checked><label
+                  for="form-novichok"
+                  >Новичок</label>
+                  <input  type="radio"  name="form-lybitel" ><label
+                  for="form-lybitel"
+                  >Любитель</label>
+                  <input  type="radio"  name="form-professional" ><label
+                  for="form-professional"
+                  >Профессионал</label>
+                </div>
+
+              </div>
+              <div class="attention_personal_data">
+                <input type="checkbox" >
+                <p>Я согласен на обработку моих персональных данных</p>
+              </div>
+              <button class="buy_ticket">Купить билет</button>
+          </form>
+        </section>
       </main>
     </div>
   </body>
