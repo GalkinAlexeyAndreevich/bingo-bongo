@@ -237,7 +237,7 @@ header nav a {
     font-size: 5rem;
 }
 .top_shop_text{
-    font-size: "Rubik1";
+    font-family: "Rubik1";
     font-size: 2rem;
     padding-top: 1.5rem;
     padding-bottom: 5rem;
@@ -335,6 +335,7 @@ header nav a {
 
 .sellary_kids_games{
     /* width: 100%; */
+    max-width:  1366px;
     padding-top: 6rem;
     /* padding-left: 6rem; */
     margin-top: 12rem;
@@ -368,20 +369,18 @@ header nav a {
 }
 .sellary_kids_text {
     margin-top: 1rem;
-    /* padding-right: 70rem; */
     padding-left: 10rem;
-    /* padding-bottom: 100rem; */
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
     flex-direction: column;
 }
 
 .sellary_kids_text h1{
     font-family: 'Rubik3';
     font-size: 7.5rem;
+    line-height: 8rem;
 }
 .sellary_kids_text p{
+    margin-top: 2rem;
     font-family: 'Rubik1';
     font-size: 2rem;
 }
@@ -397,10 +396,8 @@ header nav a {
     margin-top: 12rem;
     gap: 6rem;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 50rem;
+
 }
 
 .game_of_month{
@@ -408,18 +405,16 @@ header nav a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.5rem 2rem 0.5rem 2rem;
-    /* padding-left: 1.6rem;
-    padding-right: 1.6rem; */
     font-family: "Rubik2";
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     border-radius: 1.8rem;
     margin-right: 4rem;
+    padding: 1rem 3rem;
     
 }
 .game_of_month img{
-    width:4rem;
-    height: 4rem;
+    width:3.5rem;
+    height: 3.5rem;
     margin-right: 0.5rem;
 }
 
@@ -439,7 +434,6 @@ header nav a {
 }
 .container_city_game{
     display: flex;
-    position: relative;
     /* justify-content: center;
     align-items: center; */
     gap:6rem
@@ -490,12 +484,13 @@ header nav a {
     padding: 1rem 2rem 1rem 2rem;
 }
 .game_description_dop_info{
-    position: absolute;
-    top: 48rem;
+    /* position: absolute;
+    top: 48rem; */
 
 }
 
 .dop_info_radio_button{
+    margin-top: 3rem;
     display: flex;
     background-color:#f0f0eb;
     padding:0.5rem 1rem;
@@ -505,12 +500,15 @@ header nav a {
     border-radius: 1.3rem;
     font-weight: bolder;
     margin-bottom: 2rem;
+
 }
 .dop_info_radio_button input[type=radio] {
 	display: none;
 }
 
 .dop_info_radio_button input[type=radio] + label {
+    display: flex;
+    align-items:center;
 	/* background: #ffe0a6; */
     cursor: pointer;
     padding: 0.5rem 4rem;
@@ -524,6 +522,7 @@ header nav a {
 .game_description_dop_info p{
     font-family: "Rubik1";
     font-size: 1.82rem;
+    line-height: 2.6rem;
 }
 
 
@@ -534,6 +533,7 @@ header nav a {
 
 
 .form{
+    margin-top: 30rem;
     display: flex;
     justify-content:center;
     /* margin-bottom: 21rem; */
@@ -610,7 +610,7 @@ header nav a {
 
 
 .right_form_container{
-    margin-left: 20rem;
+    margin-left: 10rem;
     /* margin-top: 200rem; */
     display: flex;
     flex-direction: column;
@@ -625,7 +625,7 @@ header nav a {
 .three_inputs_form input{
     border-color: #ced0d1;
     border-radius:2rem;
-    width: 50rem;
+    width: 47rem;
     height: 5rem;
     margin-bottom: 2rem;
     align-items: center;
@@ -648,7 +648,7 @@ header nav a {
 }
 .choose_your_game_level label{
     font-family: "Rubik1";
-    font-size: 2.3rem;
+    font-size: 1.9rem;
     margin-right: 2rem;
 
 }
@@ -656,7 +656,7 @@ header nav a {
     margin-top: 3rem;
     display: flex;
     align-items:center;
-    font-size:2rem
+    font-size:1.7rem
 }
 .attention_personal_data input{
     width: 2.2rem;
