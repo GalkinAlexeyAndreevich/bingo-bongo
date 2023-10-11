@@ -24,13 +24,17 @@
 html,
 body {
     margin: 0;
+    /* margin-left: 100rem; */
     padding: 0; 
+    height: 100%;
     display: grid;
+    
     justify-content: center;
     background-color:#fcfcfa
 }
 .super_main_container{
     width: 1366px;
+    position: relative;
 }
 h1,
 h2,
@@ -40,7 +44,9 @@ h5,p {
     margin: 0;
     padding: 0;
 }
-
+button{
+    cursor: pointer;
+}
 /* Header */
 header {
     padding-top: 3rem;
@@ -68,11 +74,11 @@ header nav a {
     color: black;
     font-family: "Rubik2";
     font-size: 2rem;
-    /* font-weight: 300; */
 }
 
 
 .header_text {
+    margin-top: 17rem;
     display: grid;
     align-items: center;
     text-align: center;
@@ -103,16 +109,16 @@ header nav a {
     align-items: center;
     justify-content: center;
     margin-top: 4rem;
-    margin-bottom: 15rem;
+
 }
 
 .header_text_container {
-
+    background: url("./img/waves.png") no-repeat ;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 20rem;
+    padding-bottom: 13rem;
 }
 
 
@@ -123,11 +129,8 @@ header nav a {
 .main_about_container {
     margin-top: 12rem;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     gap: 10rem;
-    /* padding-left: 100px;
-    padding-right: 100px; */
 }
 
 .main_about_text p {
@@ -348,7 +351,9 @@ header nav a {
     display: flex;
 }
 .sellary_kids_text {
-    margin-top: 6rem;
+    margin-top: 1rem;
+    /* padding-right: 70rem; */
+    padding-bottom: 10rem;
     display: flex;
     justify-content: center;
     /* align-items: center; */
@@ -511,6 +516,13 @@ header nav a {
 .form{
     display: flex;
     justify-content:center;
+    /* margin-bottom: 21rem; */
+    padding-top: 20rem;
+    padding-bottom: 15rem;
+    background: url("./img/big-waves.png") no-repeat;
+}
+.left_form_container{
+    position: relative;
 }
 .left_form_container h1{
     font-family: "Rubik3";
@@ -526,6 +538,7 @@ header nav a {
     font-family: "Rubik2";
     font-size: 2rem;
     position: absolute;
+    height: 10rem;
 }
 .image_container1,
 .image_container2,
@@ -587,13 +600,26 @@ header nav a {
     font-family: "Rubik1";
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: #7a8291;
 }
 .three_inputs_form input{
-    border-color: #3bc1d0;
+    border-color: #ced0d1;
     border-radius:2rem;
     width: 50rem;
     height: 5rem;
     margin-bottom: 2rem;
+    align-items: center;
+}
+.choose_your_game_level div{
+    display: flex;
+    align-items: center;
+    
+}
+.choose_your_game_level input{
+    width: 2rem;
+    height: 2rem;
+    margin: 0;
+    margin-right: 1rem;
 }
 .choose_your_game_level p{
     font-family: "Rubik1";
@@ -602,8 +628,9 @@ header nav a {
 }
 .choose_your_game_level label{
     font-family: "Rubik1";
-    font-size: 2rem;
+    font-size: 2.3rem;
     margin-right: 2rem;
+
 }
 .attention_personal_data{
     margin-top: 3rem;
@@ -611,6 +638,13 @@ header nav a {
     align-items:center;
     font-size:2rem
 }
+.attention_personal_data input{
+    width: 2.2rem;
+    height: 2.2rem;
+    margin: 0;
+    margin-right: 1rem;
+}
+
 
 .buy_ticket{
     margin-top: 5rem;
@@ -619,9 +653,33 @@ header nav a {
     display: flex;
     align-items:center;
     justify-content: center;
-    padding: 1.5rem 3rem;
+    padding: 2.5rem 8rem;
     max-width: fit-content;
-    font-size: 3rem;
+    font-size: 2rem;
     border-radius:2rem;
     border:none
+}
+footer{
+
+    background-color: #e8e7df;
+    padding: 4rem 0rem;
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Rubik1";
+}
+footer img{
+    margin-right: 2rem;
+}
+footer p{
+    font-size: 2rem;
+}
+footer a{
+    font-size: 1.8rem;
+    color: black;
+    /* color: #586176; */
 }
