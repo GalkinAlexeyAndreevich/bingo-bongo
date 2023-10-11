@@ -118,9 +118,19 @@ header nav a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-bottom: 13rem;
-}
 
+    /* padding-bottom: 13rem; */
+}
+.header_star{
+    position: absolute;
+    left: 0;
+    top:35rem
+}
+.header_flower{
+    position: absolute;
+    right: 0;
+    top:16rem;
+}
 
 
 
@@ -136,6 +146,7 @@ header nav a {
 .main_about_text p {
     max-width: 62rem;
     font-family: "Rubik1";
+    line-height: 3rem;
     /* font-weight: 500; */
     font-size: 2rem;
     /* font-weight: 700; */
@@ -144,6 +155,7 @@ header nav a {
 .main_about_text h1 {
     font-family: "Rubik3";
     font-size: 5rem;
+    margin-bottom: 3rem;
 }
 
 .main_about_games {
@@ -209,6 +221,7 @@ header nav a {
 /* bing-bong */
 
 .bing_bong {
+    margin-top: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -226,6 +239,8 @@ header nav a {
 .top_shop_text{
     font-size: "Rubik1";
     font-size: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 5rem;
 }
 
 .bing_bong_img {
@@ -270,7 +285,7 @@ header nav a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 18rem;
     gap: 15rem;
 }
 
@@ -319,9 +334,9 @@ header nav a {
 
 
 .sellary_kids_games{
-    width: 100%;
+    /* width: 100%; */
     padding-top: 6rem;
-    padding-left: 6rem;
+    /* padding-left: 6rem; */
     margin-top: 12rem;
     /* position: relative; */
     background-color: #e8e7df;
@@ -336,6 +351,7 @@ header nav a {
 .heart_container{
     position: relative;
     margin-right: 3rem;
+    left: 8rem;
 }
 .heart_container h2{
     position: absolute;
@@ -353,9 +369,10 @@ header nav a {
 .sellary_kids_text {
     margin-top: 1rem;
     /* padding-right: 70rem; */
-    padding-bottom: 10rem;
+    padding-left: 10rem;
+    /* padding-bottom: 100rem; */
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     /* align-items: center; */
     flex-direction: column;
 }
@@ -367,6 +384,9 @@ header nav a {
 .sellary_kids_text p{
     font-family: 'Rubik1';
     font-size: 2rem;
+}
+.view_catalog_btn{
+    margin-bottom: 16rem;
 }
 
 
@@ -479,9 +499,9 @@ header nav a {
     display: flex;
     background-color:#f0f0eb;
     padding:0.5rem 1rem;
-    gap: 2rem;
+    gap: 1.7rem;
     font-family: "Rubik1";
-    font-size: 2.8rem;
+    font-size: 2rem;
     border-radius: 1.3rem;
     font-weight: bolder;
     margin-bottom: 2rem;
@@ -493,7 +513,7 @@ header nav a {
 .dop_info_radio_button input[type=radio] + label {
 	/* background: #ffe0a6; */
     cursor: pointer;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 4rem;
     border-radius:1rem
 }
 
