@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF_8" />
-    <meta name="viewport" content="width=device_width, initial_scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -12,17 +12,33 @@
       <header>
         <div class="first_content">
           <img src="./img/logotype.png" alt="" />
-          <nav>
-            <a href="">О нас</a>
-            <a href="">Каталог</a>
-            <a href="">Популярные игры</a>
-            <a href="">Игра месяца</a>
-            <a href="">Игротека</a>
-          </nav>
+          <div class="nav1">
+            <nav>
+              <a href="">О нас</a>
+              <a href="">Каталог</a>
+              <a href="">Популярные игры</a>
+              <a href="">Игра месяца</a>
+              <a href="">Игротека</a>
+            </nav>
+          </div>
+
           <div class="header_icons">
             <img src="./img/search.svg" alt="" />
             <img src="./img/profile.svg" alt="" />
             <img src="./img/cart.svg" alt="" />
+            <div class="menu_container">
+              <div class="menu_img">
+                <img src="./img/myImg/menu-icon.png" alt="">
+              </div>
+              <div class="nav2">
+                  <a href="">О нас</a>
+                  <a href="">Каталог</a>
+                  <a href="">Популярные игры</a>
+                  <a href="">Игра месяца</a>
+                  <a href="">Игротека</a>
+              </div>
+
+            </div>
           </div>
         </div>
         <div class="header_star">
@@ -35,8 +51,8 @@
 
           
           <div class="header_text">
-            <h1>НАСТОЛЬНЫЕ ИГРЫ</h1>
-            <h1 class="text_aqua">ДЛЯ ЛЮБОЙ КОМПАНИИ</h1>
+            <h2>НАСТОЛЬНЫЕ ИГРЫ</h2>
+            <h2 class="text_aqua">ДЛЯ ЛЮБОЙ КОМПАНИИ</h2>
             <p>
               Самые популярные игры для детей и взрослых <br />с бесплатной
               доставкой по всему миру
@@ -47,9 +63,9 @@
         </div>
       </header>
       <main>
-        <section class="main_about_container">
+        <section class="main_about_container wrap">
           <div class="main_about_text">
-            <h1>О НАС</h1>
+            <h2>О НАС</h2>
             <p>
               Бинго Бонго – это место, где каждый найдет игру себе по душе.
               Спортивные, логические, стратегические, развивающие и очень
@@ -71,7 +87,7 @@
           </div>
           <img src="./img/game.png" alt="" />
         </section>
-        <section class="main_about_games">
+        <section class="main_about_games wrap">
           <div class="cart backgound1">
             <h3>Для детей</h3>
             <p>
@@ -109,12 +125,12 @@
           </div>
         </section>
         <section class="bing_bong">
-          <h1 class="title_bing_bong">БИНГО БОНГО</h1>
+          <h2 class="title_bing_bong">БИНГО БОНГО</h2>
           <p class="top_shop_text">
             Самый популярный магазин настольных игр в России <br />в 2021 году
             по рейтингу журнала GiGiGame
           </p>
-          <div class="bing_bong_row">
+          <div class="bing_bong_row wrap">
             <div class="bing_bong_img">
               <img src="./img/car.svg" alt="" />
               <p class="top_left text_bing_bong">
@@ -152,11 +168,11 @@
             </div>
           </div>
         </section>
-        <section class="lovely_games">
-          <h1>
+        <section class="lovely_games wrap">
+          <h2>
             Любимые игры <br />
             покупателей
-          </h1>
+          </h2>
           <div class="">
             <div class="lovely_class1">
               <h4 class="lovely_games_mini_title">Дино</h4>
@@ -177,30 +193,27 @@
             </div>
           </div>
         </section>
+        <section class="sellary_kids_games wrap">
+          <div class="sellary_container">
+            <div class="heart_container">
+              <h2>Скидки<br />до 50%</h2>
+              <img src="./img/heart.svg" alt="" />
+            </div>
+            <div class="sellary_kids_text">
+              <h2>
+                Распродажа <br />
+                детских игр
+              </h2>
+              <p>
+                Порадйте своего ребенка новой настольной игрой!<br />Успейте
+                приобрести, акция действует до 30 ноября.
+              </p>
+              <button class="view_catalog_btn">Смотреть каталог</button>
+            </div>
+          </div>
 
-        <section class="sellary_kids_games">
-          <div class="heart_container">
-            <h2>Скидки<br />до 50%</h2>
-            <img src="./img/heart.svg" alt="" />
-          </div>
-          <div class="sellary_kids_text">
-            <h1>
-              Распродажа <br />
-              детских игр
-            </h1>
-            <p>
-              Порадйте своего ребенка новой настольной игрой!<br />Успейте
-              приобрести, акция действует до 30 ноября.
-            </p>
-            <button class="view_catalog_btn">Смотреть каталог</button>
-          </div>
-          <div></div>
         </section>
-        <section class="game_with_description">
-          <!-- <div>
-            
-            
-          </div> -->
+        <section class="game_with_description wrap">
           <div class="game_description_dop_info">
             <img src="./img/town.png" alt="" />
             <div class="dop_info_radio_button">
@@ -260,7 +273,7 @@
                 </div>
               </div>
               <div class="city_game_text">
-                <h1>ГОРОД</h1>
+                <h2>ГОРОД</h2>
                 <p>
                   Увлекательная игра, в которой вам вам предстоит построить
                   город <br />своей мечты. Но это не так просто, как кажется.
@@ -294,13 +307,13 @@
           </div>
         </section>
 
-        <!-- </section> -->
-        <section class="form">
+        <section class="form wrap">
           <div class="left_form_container">
-            <h1>
-              ОКТЯБРЬСКАЯ <br />
+            <h2>
+              ОКТЯБРЬСКАЯ 
+              <br />
               ИГРОТЕКА
-            </h1>
+            </h2>
             <p>
               Приглашаем вас на увлекательную игротеку от Бинго <br />
               Бонго! Приходите сами, приводите друзей и семью. <br />
