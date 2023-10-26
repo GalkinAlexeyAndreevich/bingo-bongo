@@ -861,14 +861,6 @@ footer a{
     .left_form_container{
         text-align: center;
     }
-    /* .sellary_kids_text {
-        position: relative;
-        left:9.4rem;
-        margin-top: 1rem;
-        padding-left: 10rem;
-        display: flex;
-        flex-direction: column;
-    } */
     
     .sellary_kids_text h2{
         font-family: 'Rubik3';
@@ -911,11 +903,29 @@ footer a{
     .sellary_container{
         left:0rem;
     }
+    .heart_container img{
+        width:10rem;
+        height:10rem;
+    }
     .heart_container{
-        left:1rem;
+        
+        position: absolute;
+        margin-right: 3rem;
+        left: 1rem;
+        top:-1.7rem
+    }
+    .heart_container h2{
+        position: absolute;
+        top: 3.5rem;
+        left: 3.1rem;
+        transform:rotate(-30deg);
+        font-size: 1.5rem;
+        color: #3bc1d0;
+        font-family: 'Rubit3';
+    
     }
     .sellary_kids_text {
-        left:5rem;
+        left:2.4rem;
         padding-bottom: 5rem;
         z-index: 4;
     }
@@ -943,6 +953,31 @@ footer a{
     }
     .view_catalog_btn{
         margin-bottom: 4rem;
+    }
+    .heart_container img{
+        width:7rem;
+        height:7rem;
+    }
+    .heart_container{
+        
+        position: absolute;
+        margin-right: 3rem;
+        left: 1rem;
+        top:-1.7rem
+    }
+    .heart_container h2{
+        position: absolute;
+        top: 1.9rem;
+        left: 1.9rem;
+        transform:rotate(-30deg);
+        font-size: 1.2rem;
+        color: #3bc1d0;
+        font-family: 'Rubit3';
+    
+    }
+    .sellary_kids_text {
+        left:1.1rem;
+        padding-left: 7.5rem;
     }
     .sellary_kids_text h2{
         font-family: 'Rubik3';
@@ -976,6 +1011,22 @@ footer a{
     .header_text p {
         font-family: "Rubik1";
         font-size: 1.8rem;
+    }
+    .sellary_kids_text p{
+        width: 28rem;
+    }
+    .game_description_dop_info{
+        display: flex;
+        flex-direction: column;
+        align-items:center
+    }
+    .dop_info_radio_button{
+        padding: 0.5rem 1rem;
+        font-size: 1.7rem;
+        width: fit-content;
+    }
+    .dop_info_radio_button label{
+        padding: 0.5rem 2rem;
     }
 }
 
