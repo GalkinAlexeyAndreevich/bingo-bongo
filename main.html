@@ -14,11 +14,11 @@
           <img src="./img/logotype.png" alt="" />
           <div class="nav1">
             <nav>
-              <a href="">О нас</a>
-              <a href="">Каталог</a>
-              <a href="">Популярные игры</a>
-              <a href="">Игра месяца</a>
-              <a href="">Игротека</a>
+              <a href="#about">О нас</a>
+              <a href="#catalog">Каталог</a>
+              <a href="#popular_games">Популярные игры</a>
+              <a href="#game_of_month">Игра месяца</a>
+              <a href="#igroteka">Игротека</a>
             </nav>
           </div>
 
@@ -59,11 +59,11 @@
             </p>
           </div>
 
-          <button class="view_catalog_btn">Смотреть каталог</button>
+          <button class="view_catalog_btn"><a href="#catalog">Смотреть каталог</a></button>
         </div>
       </header>
       <main>
-        <section class="main_about_container wrap">
+        <section id="about" class="main_about_container wrap">
           <div class="main_about_text">
             <h2>О НАС</h2>
             <p>
@@ -87,7 +87,7 @@
           </div>
           <img src="./img/game.png" alt="" />
         </section>
-        <section class="main_about_games wrap">
+        <section id="catalog"  class="main_about_games wrap">
           <div class="cart backgound1">
             <h3>Для детей</h3>
             <p>
@@ -168,7 +168,7 @@
             </div>
           </div>
         </section>
-        <section class="lovely_games wrap">
+        <section id="popular_games" class="lovely_games wrap">
           <h2>
             Любимые игры <br />
             покупателей
@@ -208,12 +208,12 @@
                 Порадйте своего ребенка новой настольной игрой!<br />Успейте
                 приобрести, акция действует до 30 ноября.
               </p>
-              <button class="view_catalog_btn">Смотреть каталог</button>
+              <button class="view_catalog_btn"><a href="#catalog">Смотреть каталог</a></button>
             </div>
           </div>
 
         </section>
-        <section class="game_with_description wrap">
+        <section id="game_of_month" class="game_with_description wrap">
           <div class="game_description_dop_info">
             <img src="./img/town.png" alt="" />
             <div class="dop_info_radio_button">
@@ -307,7 +307,7 @@
           </div>
         </section>
 
-        <section class="form wrap">
+        <section id="igroteka" class="form wrap">
           <div class="left_form_container">
             <h2>
               ОКТЯБРЬСКАЯ 
@@ -348,7 +348,7 @@
               </div>
               <div class="three_inputs_form">
                 <p>Телефон</p>
-                <input type="text" class="form_phone">
+                <input type="tel" class="form_phone" placeholder="+ 7___ ___ ___"> 
               </div>
               <div class="three_inputs_form">
                 <p>Email</p>
@@ -356,28 +356,30 @@
               </div>
               <div class="choose_your_game_level">
                 <p>Выберите свой игровой уровень</p>
-                <div>
-                  <input type="radio"  name="form-novichok" checked><label
+                <div >
+                  <input type="radio" id="form-novichok"  name="radio-game-level" checked><label
                   for="form-novichok"
                   >Новичок</label>
-                  <input  type="radio"  name="form-lybitel" ><label
+                  <input  type="radio" id="form-lybitel"   name="radio-game-level" ><label
                   for="form-lybitel"
                   >Любитель</label>
-                  <input  type="radio"  name="form-professional" ><label
+                  <input  type="radio" id="form-professional"   name="radio-game-level" ><label
                   for="form-professional"
                   >Профессионал</label>
                 </div>
 
               </div>
               <div class="attention_personal_data">
-                <input type="checkbox" class="attention_input">
-                <p>Я согласен на обработку моих персональных данных</p>
+                <input type="checkbox" class="attention_input"><label for="attention_input">
+                  Я согласен на обработку моих персональных данных
+                </label>
+                <!-- <p>Я согласен на обработку моих персональных данных</p> -->
               </div>
               <button class="buy_ticket">Купить билет</button>
           </form>
         </section>
       </main>
-      <footer>
+      <footer class="wrap">
         <p>Бинго Бонго © 2021 Все права защищены</p>
         <div>
           <img src="./img/facebook.svg" alt="">

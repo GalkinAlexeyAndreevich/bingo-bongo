@@ -30,7 +30,8 @@ body {
     flex-wrap: wrap;
     
     justify-content: center;
-    background-color:#fcfcfa
+    background-color:#fcfcfa;
+    color:#131b3f;
 }
 .super_main_container{
     /* width: 1366px; */
@@ -142,8 +143,13 @@ header {
     align-items: center;
     justify-content: center;
     margin-top: 4rem;
+    margin-bottom: 16rem;
 
 }
+.view_catalog_btn a{
+    text-decoration: none;
+    color:white
+ }
 
 .header_text_container {
     background: url("./img/waves.png") no-repeat ;
@@ -429,9 +435,13 @@ header {
     font-family: 'Rubik1';
     font-size: 2rem;
 }
-.view_catalog_btn{
+/* .view_catalog_btn{
     margin-bottom: 16rem;
 }
+.view_catalog_btn a{
+    text-decoration: none;
+    color:white
+ } */
 
 
 
@@ -677,10 +687,20 @@ header {
 .three_inputs_form input{
     border-color: #ced0d1;
     border-radius:2rem;
-    width: 47rem;
+    width: 43rem;
     height: 5rem;
+    padding-left:2rem;
     margin-bottom: 2rem;
     align-items: center;
+    font-size: 2rem;
+}
+
+.form_phone::placeholder{
+    font-family: "Rubik1";
+    font-size: 1.9rem;
+    /* padding-left: 1rem; */
+    color:#37405d;
+    opacity: 1;
 }
 .choose_your_game_level div{
     display: flex;
@@ -688,10 +708,16 @@ header {
     
 }
 .choose_your_game_level input{
+    /* appearance: none; */
+    /* border-radius:50%; */
+    cursor:pointer;
     width: 2rem;
     height: 2rem;
     margin: 0;
     margin-right: 1rem;
+    accent-color:white;
+    /* border-width:60px; */
+    border: 6px solid black;
 }
 .choose_your_game_level p{
     font-family: "Rubik1";
@@ -704,19 +730,74 @@ header {
     margin-right: 2rem;
 
 }
+.choose_your_game_level input:checked{
+    appearance: none;
+    border-radius:50%;
+    border: 6px solid black;
+}
+
 .attention_personal_data{
     margin-top: 3rem;
     display: flex;
     align-items:center;
-    font-size:1.7rem
-}
-.attention_personal_data input{
-    width: 2.2rem;
-    height: 2.2rem;
-    margin: 0;
-    margin-right: 1rem;
+    font-size:1.7rem;
 }
 
+
+.attention_personal_data{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.attention_input{
+    /* display: none; */
+    opacity: 0;
+    cursor:pointer;
+    position:absolute;
+    
+}
+.attention_personal_data label{
+    display: flex;
+    align-items:center;
+}
+.attention_personal_data label:before {
+    /* position: absolute; */
+	content: "";
+	display: inline-flex;
+    align-items:center;
+	width: 1.5rem;
+	height: 1.5rem;
+	/* position: absolute; */
+	left: 0;
+	bottom: 1px;
+	background-color: #f0f0eb;
+    margin-right: 5px;
+
+    border-radius: 5px;
+    border: solid black 2px;
+}
+
+.attention_personal_data input[type=checkbox]:checked + label:before {
+	background-color: black;
+    background-image: url("./img/myImg/gal.png");
+    background-size: cover;
+    
+}
+
+/* .attention_input{
+
+    border-radius:2.5rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 1px;
+    margin: 0;
+    margin-right: 1rem;
+    accent-color: black;
+    border:10rem solid black
+}
+.attention_personal_data label{
+    display: flex;
+} */
 
 .buy_ticket{
     margin-top: 5rem;
@@ -779,6 +860,25 @@ footer a{
     }
     .left_form_container{
         text-align: center;
+    }
+    /* .sellary_kids_text {
+        position: relative;
+        left:9.4rem;
+        margin-top: 1rem;
+        padding-left: 10rem;
+        display: flex;
+        flex-direction: column;
+    } */
+    
+    .sellary_kids_text h2{
+        font-family: 'Rubik3';
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+    .sellary_kids_text p{
+        margin-top: 2rem;
+        font-family: 'Rubik1';
+        font-size: 1.7rem;
     }
 }
 
@@ -843,6 +943,19 @@ footer a{
     }
     .view_catalog_btn{
         margin-bottom: 4rem;
+    }
+    .sellary_kids_text h2{
+        font-family: 'Rubik3';
+        font-size: 5rem;
+        line-height: 4rem;
+    }
+    .sellary_kids_text p{
+        margin-top: 2rem;
+        font-family: 'Rubik1';
+        font-size: 1.5rem;
+    }
+    footer{
+        flex-direction: column;
     }
 }
 
